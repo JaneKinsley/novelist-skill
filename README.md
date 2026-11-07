@@ -3,7 +3,7 @@
 ![version](https://img.shields.io/badge/version-0.2.0-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-8A2BE2)
-[![skills.sh](https://skills.sh/b/JaneKinsley/novelist-skill)](https://skills.sh/janekinsley/novelist-skill)
+[![skills.sh](https://img.shields.io/badge/skills.sh-listed-000000)](https://skills.sh/janekinsley/novelist-skill)
 
 A workflow skill for long-form Chinese novel writing — turn a few keywords into a confirmable,
 checkable, portable novel framework, then write it chapter by chapter without losing consistency.
