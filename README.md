@@ -3,6 +3,7 @@
 ![version](https://img.shields.io/badge/version-0.2.0-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-8A2BE2)
+[![skills.sh](https://skills.sh/b/JaneKinsley/novelist-skill)](https://skills.sh/janekinsley/novelist-skill)
 
 A workflow skill for long-form Chinese novel writing — turn a few keywords into a confirmable,
 checkable, portable novel framework, then write it chapter by chapter without losing consistency.
@@ -24,7 +25,17 @@ checkable, portable novel framework, then write it chapter by chapter without lo
 
 ## 安装
 
-### 方式 1：Claude Code 插件（推荐）
+### 方式 1：skills CLI（最通用，支持 79 种 Agent）
+
+```bash
+npx skills add JaneKinsley/novelist-skill
+```
+
+会列出仓库里的 skill，让你选 agent（Claude Code / Codex / Cursor / Copilot / Windsurf …）和安装位置；加 `-g` 装到全局，加 `-a claude-code -y` 免交互。
+
+已收录于 [skills.sh](https://skills.sh/janekinsley/novelist-skill)，这也是它被搜索到的入口。
+
+### 方式 2：Claude Code 插件
 
 在 Claude Code 里执行**两步**（注册市场 ≠ 安装插件，两步都要做）：
 
@@ -37,7 +48,7 @@ checkable, portable novel framework, then write it chapter by chapter without lo
 
 > 更新方式：本仓库版本号 +1 后，执行 `/plugin update` 才会拉到新版本。
 
-### 方式 2：手动放进 skills 目录（任何支持 Agent Skills 的客户端）
+### 方式 3：手动放进 skills 目录（任何支持 Agent Skills 的客户端）
 
 ```bash
 git clone --depth 1 https://github.com/JaneKinsley/novelist-skill.git /tmp/novelist-skill
@@ -55,7 +66,7 @@ Copy-Item -Recurse "$env:TEMP\novelist-skill\skills\novelist-skill" "$env:USERPR
 
 只想要最小安装？`SKILL.md` 一个文件就够用；`templates/` 是工作区骨架，可以不要。
 
-### 方式 3：其他 Agent（Codex / Cursor / 通用）
+### 方式 4：其他 Agent（Codex / Cursor / 通用）
 
 | 客户端 | 放这里 |
 |---|---|
@@ -65,7 +76,7 @@ Copy-Item -Recurse "$env:TEMP\novelist-skill\skills\novelist-skill" "$env:USERPR
 
 目录名必须等于 `SKILL.md` frontmatter 里的 `name`（`novelist-skill`），且 `SKILL.md` 首行是 `---`。放完重开会话。
 
-### 方式 4：不做 git，直接下载
+### 方式 5：不做 git，直接下载
 
 仓库页 **Code → Download ZIP**，解压后把 `skills/novelist-skill/` 复制到你的 skills 目录即可。
 
