@@ -308,9 +308,9 @@ novelist-skill/
 │   └── marketplace.json    市场目录
 ├── skills/novelist-skill/  ← 真正的 skill
 │   ├── SKILL.md            规范全文：模块 0—11 + 附录 A/B
-│   ├── README.md           本文件
+│   ├── README.md           skill 内导读（与本文件同源）
 │   └── templates/          工作区骨架
-├── README.md
+├── README.md               本文件（仓库首页）
 ├── CHANGELOG.md
 └── LICENSE
 ```
