@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "novelist-skill",
+  "version": "0.2.0",
+  "description": "中文长篇小说写作流程 skill：少关键词启动，经约束、定调、施工三道确认形成可执行框架，再试写与逐章写作，内置一致性校验、压缩归档与跨 Agent 续写。",
+  "author": {
+    "name": "HJB"
+  },
+  "license": "MIT",
+  "keywords": [
+    "novel",
+    "fiction",
+    "chinese",
+    "writing",
+    "story-framework",
+    "outline",
+    "consistency",
+    "agent-skill"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "novelist-skill",
+  "owner": {
+    "name": "HJB"
+  },
+  "description": "AI 小说家：中文长篇小说框架构建与写作流程 skill 的插件市场。",
+  "plugins": [
+    {
+      "name": "novelist-skill",
+      "source": "./",
+      "description": "少关键词启动 → 约束 → 定调 → 施工 → 试写 → 正文，含写作期一致性管理与跨 Agent 续写。",
+      "version": "0.2.0",
+      "license": "MIT",
+      "category": "writing"
+    }
+  ]
+}
