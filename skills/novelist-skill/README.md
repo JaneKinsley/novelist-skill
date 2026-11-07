@@ -1,23 +1,29 @@
 # novelist-skill
 
+![version](https://img.shields.io/badge/version-0.2.0-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+[![skills.sh](https://img.shields.io/badge/skills.sh-listed-000000)](https://skills.sh/janekinsley/novelist-skill)
+
 > **v0.2.0** ｜ 纯 Markdown ｜ MIT ｜ 优先面向有工作区的 Agent
 >
 > 把“写小说”拆成一条可确认、可验收、可迁移的流水线：
 > **关键词 → 约束 → 定调（明确故事·人物·世界）→ 施工（明确情节·章节·一致性）→ 试写 → 正文**
 >
 > 每一步只产出一件东西、只过一道关；写作期再管住上文与一致性。
+>
+> 仓库：<https://github.com/JaneKinsley/novelist-skill>　｜　目录页：<https://skills.sh/janekinsley/novelist-skill>
 
 ---
 
 ## 30 秒上手
 
 ```text
-① 放进 skills 目录      →  ② 说一句关键词  →  ③ 跟着门禁说“确认”
+① npx skills add JaneKinsley/novelist-skill   →  ② 说一句关键词  →  ③ 跟着门禁说“确认”
 ```
 
 | 步 | 你要做的事 | 大约耗时 |
 |---|---|---|
-| ① 安装 | 把 `SKILL.md` 放进 `<skills 目录>/novelist-skill/` | 1 分钟 |
+| ① 安装 | 跑一行 `npx skills add JaneKinsley/novelist-skill`，按提示选 agent | 1 分钟 |
 | ② 开口 | 一句题材 + 篇幅 + 禁忌，例如“近未来记忆租赁，冷峻短句，不要穿越，中篇” | 10 秒 |
 | ③ 过门 | Agent 每出一版产物就停下等你；你说“确认 / 改 X / 回退”，它才继续 | 每关 1—3 轮 |
 
@@ -63,13 +69,23 @@
 
 ## 3. 安装
 
+**最快一行**——自动识别你机器上的 agent 并装好：
+
+```bash
+npx skills add JaneKinsley/novelist-skill
+```
+
+会列出仓库里的 skill，让你选 agent（Claude Code / Codex / Cursor / Copilot / Windsurf 等 79 种）和范围（项目级 / 全局）。加 `-g` 装到全局，加 `-a claude-code -y` 免交互。
+
 | 方式 | 适合 | 做法 |
 |---|---|---|
-| **目录安装**（推荐） | Claude Code / Codex / Cursor / 通用 Agent | 建 `<skills 目录>/novelist-skill/`，把 `SKILL.md` 放进去 |
-| **整包安装** | 想连 `templates/` 一起带走 | 把整个 `novelist-skill/` 目录拷进 skills 目录 |
-| **粘贴模式** | 无 skill 机制、网页版、临时试用 | 把 `SKILL.md` 模块 8.2 的系统提示词粘进 system prompt |
+| **skills CLI**（推荐） | 大多数 agent | `npx skills add JaneKinsley/novelist-skill` |
+| **Claude Code 插件** | 只用 Claude Code | `/plugin marketplace add JaneKinsley/novelist-skill`，再 `/plugin install novelist-skill@novelist-skill`（两步都要） |
+| **手动复制** | 想自己控制位置 | `git clone` 后把 `skills/novelist-skill/` 拷进 skills 目录 |
+| **下载 ZIP** | 不装 git | 仓库页 **Code → Download ZIP**，解压后取 `skills/novelist-skill/` |
+| **粘贴模式** | 无文件系统、网页版 | 把 `SKILL.md` 模块 8.2 的系统提示词贴进 system prompt |
 
-常见 skills 目录：
+手动复制时的常见 skills 目录：
 
 ```text
 用户级（整机可用）   ~/.claude/skills/   ~/.codex/skills/   ~/.agents/skills/
@@ -350,6 +366,8 @@ novelist-skill/
 
 - **版本**：`0.2.0`（2026-11-03）｜与 `SKILL.md` frontmatter 一致
 - **v0.2 修订**：15 项，集中在结构、信息、人物、一致性、验收、输入、边界七处，逐条见 `SKILL.md` 11.2
+- **仓库**：<https://github.com/JaneKinsley/novelist-skill>
+- **目录页**：<https://skills.sh/janekinsley/novelist-skill>
 - **许可**：MIT
 - **维护**：HJB
 
